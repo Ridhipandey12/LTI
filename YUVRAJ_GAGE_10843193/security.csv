@@ -1,0 +1,40 @@
+Incident #001 | User=johns | Alert=Multiple failed SSH logins | SourceIP=10.1.1.9 | Host=SRV-LNX-01 | OS=Ubuntu 20 | MITRE=T1110 | Severity=High | Resolution=Blocked source IP; Reset password; Enabled MFA.
+Incident #002 | User=markp | Alert=Suspicious PowerShell encoded command detected | Host=WKS-22 | OS=Windows 11 | MITRE=T1059 | Severity=High | Resolution=Terminated process; Disabled PowerShell v2; Quarantined artifacts.
+Incident #003 | User=anitaa | Alert=Rapid file encryption detected (possible ransomware) | Host=FIN12 | OS=Windows 10 | MITRE=T1486 | Severity=Critical | Resolution=Isolated host; Triggered incident response plan; Restored from backup.
+Incident #004 | User=rakesh | Alert=Unusual outbound DNS requests to unknown domain | Host=SRV-DB01 | OS=CentOS 7 | MITRE=T1568 | Severity=Medium | Resolution=Blacklisted domain; Conducted IOC scan.
+Incident #005 | User=danielk | Alert=Privilege escalation attempt | Host=WKS-77 | OS=Windows 11 | MITRE=T1068 | Severity=High | Resolution=Revoked privileges; Credential rotation; Monitored user actions.
+Incident #006 | User=alexa | Alert=Malicious Python script executed | Host=LAB-07 | OS=Ubuntu 22 | MITRE=T1059.006 | Severity=High | Resolution=Stopped script; Performed malware analysis; Cleaned environment.
+Incident #007 | User=stevet | Alert=SSH brute-force authentication attempts | SourceIP=10.2.4.9 | Host=SRV-LNX-12 | OS=Ubuntu 22 | MITRE=T1110.001 | Severity=High | Resolution=Blocked IP; Enabled fail2ban; Reset credentials.
+Incident #008 | User=rohan | Alert=Spike in failed login attempts | Host=SRV-APP2 | OS=RedHat 8 | MITRE=T1110 | Severity=Medium | Resolution=Throttled login attempts; Enabled MFA.
+Incident #009 | User=megha | Alert=PowerShell IEX download command detected | Host=WKS-81 | OS=Windows 10 | MITRE=T1059.001 | Severity=High | Resolution=Killed process; Quarantined file; Blocked domain.
+Incident #010 | User=allan | Alert=Cross-site scripting attempt on internal web tool | Host=WEB-03 | OS=Debian 11 | MITRE=T1059.007 | Severity=Medium | Resolution=Patched input validation; Updated WAF rules.
+Incident #011 | User=samr | Alert=Unusual sudo usage | Host=SRV-LNX-05 | OS=Ubuntu 18 | MITRE=T1053 | Severity=Medium | Resolution=Reviewed sudoers file; Revoked access.
+Incident #012 | User=kishor | Alert=Detected network port scanning | SourceIP=172.22.9.54 | Host=SRV-WIN-02 | OS=Windows Server 2019 | MITRE=T1046 | Severity=High | Resolution=Blocked IP; Alerted network team.
+Incident #013 | User=peter | Alert=Unauthorized DB dump attempt | Host=SRV-DB03 | OS=RedHat 9 | MITRE=T1005 | Severity=High | Resolution=Revoked DB access; Rotated DB keys.
+Incident #014 | User=maria | Alert=Suspicious remote desktop login | Host=WKS-55 | OS=Windows 11 | MITRE=T1021.001 | Severity=High | Resolution=Forced logout; Enabled geolocation restrictions.
+Incident #015 | User=jay | Alert=Unknown binary consuming 100% CPU | Host=SRV-LNX-09 | OS=Ubuntu 20 | MITRE=T1106 | Severity=Medium | Resolution=Terminated binary; Conducted memory dump.
+Incident #016 | User=lisa | Alert=Frequent failed sudo attempts | Host=DEV-01 | OS=Debian 10 | MITRE=T1110 | Severity=Medium | Resolution=Implemented lockout; Alert rule created.
+Incident #017 | User=george | Alert=Malicious Java JAR execution | Host=DEV-04 | OS=Windows 10 | MITRE=T1059.005 | Severity=High | Resolution=Quarantined binary; Removed persistence keys.
+Incident #018 | User=will | Alert=Suspicious SSH key usage | Host=SRV-SSH01 | OS=Ubuntu 22 | MITRE=T1552 | Severity=High | Resolution=Revoked SSH keys; Enforced rotation.
+Incident #019 | User=anirudh | Alert=Outbound C2 communication detected | Host=WKS-13 | OS=Windows 11 | MITRE=T1071 | Severity=Critical | Resolution=Isolated host; Captured PCAP.
+Incident #020 | User=riya | Alert=Unapproved VPN usage | Host=WKS-14 | OS=Windows 10 | MITRE=T1133 | Severity=Medium | Resolution=Disconnected VPN; Updated whitelist.
+Incident #021 | User=tony | Alert=Multiple failed RDP logins | Host=WKS-33 | OS=Windows 10 | MITRE=T1021 | Severity=High | Resolution=Blocked IPs; Enabled account lockout.
+Incident #022 | User=kevin | Alert=Suspicious cronjob created | Host=SRV-LNX-21 | OS=Ubuntu 18 | MITRE=T1053.003 | Severity=Medium | Resolution=Removed cronjob; Investigated creator.
+Incident #023 | User=harsha | Alert=Unauthorized file transfer via SCP | Host=SRV-LNX-18 | OS=Ubuntu 20 | MITRE=T1105 | Severity=High | Resolution=Disabled SCP; Investigated user session.
+Incident #024 | User=daniel | Alert=Macro-enabled document executed | Host=WKS-90 | OS=Windows 11 | MITRE=T1059.005 | Severity=High | Resolution=Removed macro; Tracked email origin.
+Incident #025 | User=ethan | Alert=Suspicious PowerShell Empire beacon | Host=WKS-64 | OS=Windows 10 | MITRE=T1090 | Severity=Critical | Resolution=Isolated host; Removed persistence.
+Incident #026 | User=varun | Alert=Infection via malicious USB | Host=WKS-11 | OS=Windows 10 | MITRE=T1091 | Severity=High | Resolution=Blocked USB; Re-imaged workstation.
+Incident #027 | User=fahad | Alert=WMI execution detected | Host=SRV-WIN-05 | OS=Windows Server 2022 | MITRE=T1047 | Severity=High | Resolution=Disabled WMI; Investigated remote commands.
+Incident #028 | User=aditya | Alert=Suspicious Python venv created automatically | Host=DEV-09 | OS=Ubuntu 20 | MITRE=T1059.006 | Severity=Medium | Resolution=Investigated process tree; Removed env.
+Incident #029 | User=raj | Alert=Multiple SMB brute-force attempts | Host=SRV-FS01 | OS=Windows Server 2019 | MITRE=T1110 | Severity=High | Resolution=Blocked IP; Enabled SMB throttling.
+Incident #030 | User=yusuf | Alert=SQL injection attempt detected | Host=WEB-20 | OS=Debian 11 | MITRE=T1190 | Severity=High | Resolution=Patched inputs; Updated WAF signatures.
+Incident #031 | User=johns | Alert=Malicious scheduled task created | Host=WKS-72 | OS=Windows 11 | MITRE=T1053 | Severity=Medium | Resolution=Removed task; Investigated parent process.
+Incident #032 | User=markp | Alert=VPN login from unusual country | Host=WKS-22 | OS=Windows 11 | MITRE=T1133 | Severity=Medium | Resolution=Forced MFA challenge; Blocked session.
+Incident #033 | User=anitaa | Alert=Credential dumping via lsass.exe | Host=WKS-98 | OS=Windows 10 | MITRE=T1003 | Severity=High | Resolution=Terminated process; Memory analysis performed.
+Incident #034 | User=rakesh | Alert=Outbound traffic to known malicious IP | SourceIP=10.22.3.9 | Host=SRV-DB01 | OS=CentOS 7 | MITRE=T1071 | Severity=High | Resolution=Blocked traffic; Conducted IOC scan.
+Incident #035 | User=danielk | Alert=Attempt to disable antivirus | Host=WKS-77 | OS=Windows 11 | MITRE=T1562 | Severity=High | Resolution=Re-enabled AV; Locked user account.
+Incident #036 | User=alexa | Alert=Reverse shell attempt via bash | Host=LAB-07 | OS=Ubuntu 22 | MITRE=T1059.004 | Severity=Critical | Resolution=Killed shell; Blocked C2 IP.
+Incident #037 | User=stevet | Alert=SSH login from blacklisted country | SourceIP=192.168.55.20 | Host=SRV-LNX-12 | OS=Ubuntu 22 | MITRE=T1078 | Severity=High | Resolution=Blocked IP; Reset password.
+Incident #038 | User=rohan | Alert=Large outbound data transfer | Host=SRV-APP2 | OS=RedHat 8 | MITRE=T1041 | Severity=Critical | Resolution=Isolated server; Investigated data.
+Incident #039 | User=megha | Alert=Execution of obfuscated JavaScript | Host=WKS-81 | OS=Windows 10 | MITRE=T1059.007 | Severity=High | Resolution=Blocked JS; Investigated file source.
+Incident #040 | User=allan | Alert=SQL admin login anomaly | Host=SRV-DB03 | OS=RedHat 9 | MITRE=T1078 | Severity=Medium | Resolution=Reset admin password; Reviewed logs.
