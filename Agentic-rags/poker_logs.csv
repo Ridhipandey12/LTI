@@ -1,0 +1,5 @@
+player,action,hand,win
+P1,bet 1000,Flush,1
+P2,fold,Pair,0
+P3,raise 5000,Straight,1
+P4,call,Two Pair,0
